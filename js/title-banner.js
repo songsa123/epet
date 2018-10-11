@@ -9,10 +9,7 @@ for(let i = 0 ; i < aSpan1.length ; i ++){
         animate1();
     }
 }
-
-
 function animate1(){
-
     // 动画效果;
     for(var i = 0 ; i < aItem1.length ; i ++){
         aItem1[i].className = "";
