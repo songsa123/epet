@@ -1,22 +1,41 @@
-var aItem1 = document.querySelectorAll("#wrap .wrap-cons");
-var aSpan1 = document.querySelectorAll(".title-food li");
-var oWrap1 = document.getElementById("#wrap");
-var nowIndex1 = 0; // 当前显示的下标;
 
-for(let i = 0 ; i < aSpan1.length ; i ++){
-    aSpan1[i].onmouseenter = function(){
-        nowIndex1 = i;
-        animate1();
-    }
-}
-function animate1(){
-    // 动画效果;
-    for(var i = 0 ; i < aItem1.length ; i ++){
-        aItem1[i].className = "";
-        aSpan1[i].className = "";
-    }
-    aItem1[nowIndex1].className = "active4";
-    // span效果;
-    aSpan1[nowIndex1].className = "active2";
-    
-}
+$('.food-list1').mouseenter(function(){
+    //alert()
+    $(this).addClass('active2');
+    $(this).siblings().removeClass('active2');
+    // $(this).next().next().removeClass('active2');
+    // $(this).next().next().next().removeClass('active2');
+
+    $(this).parent().parent().next().find('.title-food-cons').css("display","block");
+    $(this).parent().parent().next().find('.title-food-cons').siblings().css("display","none");
+    // $(this).parent().parent().next().find('.foods-import').css("display","none");
+    // $(this).parent().parent().next().find('.foods-domestic').css("display","none");
+    // $(this).parent().parent().next().find('.foods-prescription').css("display","none");
+})
+$('.food-list2').mouseenter(function(){
+    $(this).parent().parent().next().find('.foods-import').css("display","block");
+    $(this).parent().parent().next().find('.foods-import').siblings().css("display","none");
+
+    $(this).addClass('active2');
+    $(this).siblings().removeClass('active2');
+   
+})
+$('.food-list3').mouseenter(function(){
+    $(this).parent().parent().next().find('.foods-domestic').css("display","block");
+    $(this).parent().parent().next().find('.foods-domestic').siblings().css("display","none");
+    // alert();
+    $(this).addClass('active2');
+    $(this).siblings().removeClass('active2');
+
+   
+   // alert();
+})
+$('.food-list4').mouseenter(function(){
+    // alert()
+    $(this).parent().parent().next().find('.foods-prescription').css("display","block");
+    $(this).parent().parent().next().find('.foods-prescription').siblings().css("display","none");
+    // alert();
+    $(this).addClass('active2');
+    $(this).siblings().removeClass('active2');
+})
+
