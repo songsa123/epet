@@ -5,45 +5,45 @@ header{
     border-bottom: 1px solid #ddd;
     background: #f5f5f5;
 }
-header div{
+header .header1{
     height: 28px;
     width: 1200px;
     margin: 0 auto;
 }
-header div ul{
+header .header1 ul{
     height: 28px;
     float: left;
 }
-header div ul  li {
+header .header1 ul  li {
     float: left;
     height: 28px;
     line-height: 28px;
     margin-right: 10px;
 }
-header div ul  li a{
+header .header1 ul  li a{
     color: #666;
     font-size: 12px;
 }
-header div ul  li a:hover{
+header .header1 ul  li a:hover{
     color: #2a90cd;
 }
-header div ul  li b{
+header .header1 ul  li b{
     font-size: 12px;
     color: #000;
 }
-header div ul:nth-of-type(1){
-    margin-right: 388px;
+header .header1 ul:nth-of-type(1){
+    margin-right: 383px;
 }
-header div ul:nth-of-type(1) li:nth-of-type(1){
+header .header1 ul:nth-of-type(1) li:nth-of-type(1){
     background: url(../img/epetbrand.png)no-repeat 7px 7px;
 }
-header div ul:nth-of-type(1) li:nth-of-type(1) a{
+header  ul:nth-of-type(1) li:nth-of-type(1) a{
     padding-left:23px;
 }
-header div ul:nth-of-type(1) li:nth-of-type(2) a{
+header  ul:nth-of-type(1) li:nth-of-type(2) a{
     padding-left: 15px;
 }
-header div ul:nth-of-type(1) li:nth-of-type(2) i{
+header  ul:nth-of-type(1) li:nth-of-type(2) i{
     display: inline-block;
     margin-left: 6px;
     width: 16px;
@@ -51,47 +51,179 @@ header div ul:nth-of-type(1) li:nth-of-type(2) i{
     background: url(../img/xqico.png)no-repeat;
     background-position: 0 -31px;
 }
-header div ul:nth-of-type(1) li:nth-of-type(2) a:hover i{
+header  ul:nth-of-type(1) li:nth-of-type(2) a:hover i{
     background: url(../img/xqico.png)no-repeat;
     background-position: 0 -18px;
 }
-header div ul:nth-of-type(1) li:nth-of-type(2) a:hover{
+header  ul:nth-of-type(1) li:nth-of-type(2) a:hover{
     color: #666;
 }
-header div ul:nth-of-type(1) li:nth-of-type(3){
-    width: 85px;
+
+/* 重庆部分二级菜单 */
+header .header1 ul:nth-of-type(1) li:nth-of-type(2){
+    position: relative;
+}
+.region{
+    width: 410px;
+    border: 1px solid #ddd;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 29px;
+    z-index: 10;
+    /* height: 295px; */
+    box-shadow: 0 0 1px;
+    display: none;
+}
+.region dl{
+    height: 20px;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.region dl dd{
+    display: block;
+float: left;
+height: 20px;
+line-height:20px;
+}
+header div ul:nth-of-type(1) li:nth-of-type(2) .region dl dd a{
+    display: block;
+    padding: 0 10px;
+    height: 20px;
+    text-align: center;
+    /* padding-left: 0; */
+}
+header div ul:nth-of-type(1) li:nth-of-type(2) .region dl dd a:hover{
+    background: #fb6003;
+    color: #fff;
+}
+.region dl dd a{
+    color: #666;
+}
+.region dl dt{
+    display: block;
+    float: left;
+    height: 16px;
+    line-height:16px;
+    color:#999;
+    border-right: 1px dashed #ddd;
+    padding-right: 12px;
+    margin-right: 5px;
+}
+.region-title1{
+    height: 30px;
+    width: 400px;
+    margin: 5px 5px 0;
+}
+.region .region-title1 span{
+    display: block;
+    float: left;
+    width: 70px;
+    height: 29px;
+    line-height: 29px;
+    color: #888;
+    font-size: 12px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    margin-right: 5px;
+    text-align: center;
+    background: #f5f5f5;
+    z-index: 10;
+}
+.region-a{
+    border-top: 1px solid #ddd;
+    margin:0 5px;
+    width: 400px;
+    height: 258px;
+}
+.region-wrap{      
+    position: relative;
+    width: 400px;
+}
+.region-1{
+    /* width: 100%; */
+    width:400px;
+    /* height: 258px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display: none; */
+}
+.region-2{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 380px;
+    /* height: 190px; */
+}
+.region-2 .area{
+    width: 380px;
+    /* height: 190px; */
+}
+.region-2 .area li{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+header .header1 .region-2 .area li a{
+    padding: 0 10px;
+}
+header div .region .region-2 .area li{
+    background: none;
+}
+header div .region .region-2 .area li a:hover{
+    background: #fb6003;
+    color: #fff;
+}
+.region .region-title1 span.span-bac{
+    background: #fff;
+}
+/*  */
+
+header .header1 ul:nth-of-type(1) li:nth-of-type(3){
+    /* width: 85px; */
     background: url(../img/bg.png)no-repeat;
     background-position: -9px -425px;
 }
-header div ul:nth-of-type(1) li:nth-of-type(3) a{
+header .header1 ul:nth-of-type(1) li:nth-of-type(3) a{
     padding-left:18px;
 }
-header div ul:nth-of-type(1) li:nth-of-type(3) a:hover{
+header .header1 ul:nth-of-type(1) li:nth-of-type(3) a:hover{
     color:#ff6600 
 }
-header div ul  li span:nth-of-type(1){
+header  ul:nth-of-type(2)  li:last-of-type a{
+    color: #ff6600;
+}
+header .header1 ul  li:last-of-type a:hover{
+    color: #2a90cd;
+}
+header  ul  li span:nth-of-type(1){
     color: #ff6600;
     font-size: 12px;
 }
-header div ul  li span:nth-of-type(2){
+header  ul  li span:nth-of-type(2){
     color: #fe002d;
     font-size: 12px;
 }
-header div ul:nth-of-type(2) li:nth-of-type(3) b{
+header .header1 ul:nth-of-type(2) li:nth-of-type(3) b{
     display: inline-block;
     width: 13px;
     height: 18px;
     background: url(../img/bg.png)no-repeat;
     background-position: -290px -40px
 }
-header div ul:nth-of-type(2) li:nth-of-type(3) a{
+header  ul:nth-of-type(2) li:nth-of-type(3) a{
     margin-left: 6px;
 }
-header div ul:nth-of-type(2) li:nth-of-type(4){
+header .header1 ul:nth-of-type(2) li:nth-of-type(4){
     position: relative;
     width: 74px;
 }
-header div ul:nth-of-type(2) li:nth-of-type(4) i{
+header .header1 ul:nth-of-type(2) li:nth-of-type(4) i{
     display: inline-block;
     width: 13px;
     height: 18px;
@@ -99,7 +231,7 @@ header div ul:nth-of-type(2) li:nth-of-type(4) i{
     background-position: -315px -40px;
     margin-right: 6px;
 }
-header div ul:nth-of-type(2) li:nth-of-type(4) b{
+header .header1 ul:nth-of-type(2) li:nth-of-type(4) b{
     display: inline-block;
     position: absolute;
     top: 12px;
@@ -110,7 +242,7 @@ header div ul:nth-of-type(2) li:nth-of-type(4) b{
     border-left: 5px solid transparent;
     border-right: 5px solid  transparent;
 }
-header div ul:nth-of-type(2) li:nth-of-type(4) a:hover em{
+header .header1 ul:nth-of-type(2) li:nth-of-type(4) a:hover em{
     position: absolute;
     top: 12px;
     left: 65px;
@@ -120,14 +252,60 @@ header div ul:nth-of-type(2) li:nth-of-type(4) a:hover em{
     border-left: 5px solid transparent;
     border-right: 5px solid  transparent; 
 }
-header div ul:nth-of-type(2) li:nth-of-type(4) a:hover b{
+header .header1 ul:nth-of-type(2) li:nth-of-type(4) a:hover b{
     display: none;
 }
-header div ul:nth-of-type(2) li:nth-of-type(5){
+/* 我的e宠部分二级菜单 */
+header .header1 ul:nth-of-type(2) li:nth-of-type(4){
+    position: relative;
+}
+.ec{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width:94px;
+    background: #fff;
+    box-shadow: 0 0 2px #ddd;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: none;
+}
+header .header1 .ec li strong{
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #666;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+header .header1 .ec li{
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    margin-top: 7px;
+}
+header .header1 .ec li a{
+    color: #666;
+    margin-left: 0;
+}
+header .header1 .ec li:nth-child(3) a{
+    margin-left: 0;
+}
+header .header1 .ec li:nth-child(5) a{
+    color: #666;
+}
+header .header1 .ec li a:hover{
+    color: #216ef7;
+}
+/*  */
+header  ul:nth-of-type(2) li:nth-of-type(5){
     position: relative;
     width: 64px;
 }
-header div ul:nth-of-type(2) li:nth-of-type(5) i{
+header  ul:nth-of-type(2) li:nth-of-type(5) i{
     display: inline-block;
     width: 15px;
     height: 20px;
@@ -135,7 +313,7 @@ header div ul:nth-of-type(2) li:nth-of-type(5) i{
     background-position: -354px -40px;
     margin-right: 6px;
 }
-header div ul:nth-of-type(2) li:nth-of-type(5) b{
+header  ul:nth-of-type(2) li:nth-of-type(5) b{
     display: inline-block;
     position: absolute;
     top: 12px;
@@ -146,7 +324,7 @@ header div ul:nth-of-type(2) li:nth-of-type(5) b{
     border-left: 5px solid transparent;
     border-right: 5px solid  transparent;
 }
-header div ul:nth-of-type(2) li:nth-of-type(5) a:hover em{
+header  ul:nth-of-type(2) li:nth-of-type(5) a:hover em{
     position: absolute;
     top: 12px;
     left: 50px;
@@ -156,9 +334,48 @@ header div ul:nth-of-type(2) li:nth-of-type(5) a:hover em{
     border-left: 5px solid transparent;
     border-right: 5px solid  transparent; 
 }
-header div ul:nth-of-type(2) li:nth-of-type(5) a:hover b{
+header .header1 ul:nth-of-type(2) li:nth-of-type(5) a:hover b{
     display: none;
 }
+/* 收藏 */
+.header1 ul:nth-of-type(2) li:nth-of-type(5){
+    position: relative;
+}
+.mycollect{
+    width:84px;
+    padding: 5px 10px; 
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    box-shadow: 0 0 5px #ddd;
+    display: none;
+}
+.mycollect a:hover{
+color: #216ef7;
+}
+.mycollect strong{
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #666;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+/* 手机版 */
+.header1 ul:nth-of-type(2) li:nth-of-type(6){
+    position: relative;
+}
+.phone{
+    position: absolute;
+    display: none;
+    border: 1px solid #ddd;
+    left: 0;
+    top: 29px;
+}
+
+
 /* -------------------top----------------------- */
 .top{
     width: 100%;
@@ -536,19 +753,20 @@ header div ul:nth-of-type(2) li:nth-of-type(5) a:hover b{
     display: block;
     width: 200px;
     height: 120px;
-    position: relative;
+    /* position: relative; */
+    border-bottom: 1px dashed #ddd;
+    overflow: hidden;
 }
 .list2 a img{
     display: block;
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    top: 0;
+    top: 0; */
 }
 .list2 a:hover img{
-    position: absolute;
+    /* position: absolute; */
     transition: 0.5s;
-    left: -10px;
-    top: 0;
+    transform: translateX(-5px);
     z-index: -1;
 }
 /* miaosha  */
@@ -1481,4 +1699,42 @@ footer .footer-title li:nth-of-type(6) a{
     border-top: 1px solid #a0a0a0;
     border-left: 1px solid #a0a0a0;
     transform: rotate(-135deg);
+}
+.end-pics{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 15px;
+    z-index: 1;
+}
+.end-pics li{
+    float: left;
+    margin-right: 3px;
+}
+.end-pics li:nth-child(1){
+    margin-left:30px;   
+}
+.ending{
+    padding: 20px 0 40px;
+    width: 1200px;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 auto;
+}
+.ending a{
+    display: block;
+    color: #222;
+    float: left;
+    margin-right: 8px;
+}
+.ending a:nth-child(1){
+    margin-left: 175px;
+}
+.ending a:hover{
+    color: #dd2727;
+    text-decoration: underline;
+}
+.ending p{
+    float: left;
+    color: #222;
 }
