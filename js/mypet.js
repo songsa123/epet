@@ -1,22 +1,22 @@
-$(".myepet").mouseenter(function(){
-    $(this).next().css("display","block");
+$(".li-epet").mouseenter(function(){
+    $(this).find(".ec").css("display","block");
 })
-$(".ec").mouseleave(function(){
-    $(this).css("display","none");
+$(".li-epet").mouseleave(function(){
+    $(this).find(".ec").css("display","none");
 })
 // 收藏
-$(".collect").mouseenter(function(){
-    $(this).next().css("display","block");
+$(".li-collect").mouseenter(function(){
+    $(this).find(".mycollect").css("display","block");
 })
-$(".mycollect").mouseleave(function(){
-    $(this).css("display","none");
+$(".li-collect").mouseleave(function(){
+    $(this).find(".mycollect").css("display","none");
 })
 // 手机版
-$(".ph").mouseenter(function(){
-    $(this).next().css("display","block");
+$(".li-phone").mouseenter(function(){
+    $(this).find(".phone").css("display","block");
 })
-$(".phone").mouseleave(function(){
-    $(this).css("display","none");
+$(".li-phone").mouseleave(function(){
+    $(this).find(".phone").css("display","none");
 })
 
 

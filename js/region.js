@@ -1,8 +1,9 @@
-$(".cq").mouseenter(function(){
-    $(this).next().css("display","block");
+$(".li-cq").mouseenter(function(){
+    $(this).find(".region").css("display","block");
 })
-$(".region").mouseleave(function(){
-    $(this).css("display","none");
+$(".li-cq").mouseleave(function(){
+    // alert();
+    $(this).find(".region").css("display","none");
 })
 $('.span1').click(function(){    
     $(this).parent().next().find('.region-1').css("display","block");

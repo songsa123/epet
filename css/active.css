@@ -1,0 +1,45 @@
+
+.nav1 .nava .nava-left a{
+background: #fff;
+}
+.nav1 .nava .nava-left a:hover{
+background: #46ab50;
+}
+.nav1 .nava .nava-right a{
+    background: #fff;
+    }
+    .nav1 .nava .nava-right a:hover{
+    background: #46ab50;
+    }
+section{
+    background: #f1ffe5;
+}
+/* img */
+.img{
+    width: 100%;
+    /* height: 460px; */
+    border-top: 2px solid #46ab50;
+}
+.img img{
+    display: block;
+    width: 100%;
+    /* height: 460px; */
+}
+/* img2 */
+.img2{
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+/* img3 */
+.img3{
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+/* img4 */
+.img4{
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
