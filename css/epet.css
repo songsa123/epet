@@ -683,6 +683,11 @@ color: #216ef7;
     font-size: 12px;
     color: #459d36;
     padding-left: 31px;
+    position: relative;
+}
+/*  */
+.list1 .hot:hover .DJS{
+display: block;
 }
 .list1 .hot b{
     display: inline-block;
@@ -820,27 +825,48 @@ top: 0;
 .p1,.p2,.p3,.p4,.p5,.p6{
     padding:0 12px;
     width: 206px;
-
+    /* border-top:1px solid #008000;
+    border-bottom:1px solid #008000;
+    border-right:1px solid #fff; */
 }
-/* .border-p{
+.list1  p:hover{
     border-top:1px solid #008000;
     border-bottom:1px solid #008000;
     border-right:1px solid #fff;
     background: #fff;
     padding: 0;
     width: 230px;;
-} */
+}
+.list1 .p1:hover .list1-a{
+    display: block;
+} 
+.list1 .p2:hover .list1-b{
+    display: block;
+} 
+.list1 .p3:hover .list1-c{
+    display: block;
+} 
+.list1 .p4:hover .list1-d{
+    display: block;
+} 
+.list1 .p5:hover .list1-e{
+    display: block;
+} 
+.list1 .p6:hover .list1-f{
+    display: block;
+}
 .list1-a{
     position: absolute;
     right:-595px;
     top: 0;
     background:#fff;
-    border: 1px solid #008000;
+    /* border: 1px solid #008000; */
     width: 570px;
     box-shadow: 0 0 5px #ddd;
     z-index: 10;
     padding-bottom: 5px;
-    /* display: none; */
+    /* opacity: 1; */
+    display: none;
 
 }
 .list1-b{
@@ -848,7 +874,7 @@ top: 0;
     right:-595px;
     top: 0;
     background:#fff;
-    border: 1px solid #008000;
+    /* border: 1px solid #008000; */
     width: 570px;
     box-shadow: 0 0 5px #ddd;
     z-index: 10;
@@ -861,7 +887,7 @@ top: 0;
     right:-595px;
     top: 0;
     background:#fff;
-    border: 1px solid #008000;
+    /* border: 1px solid #008000; */
     width: 570px;
     box-shadow: 0 0 5px #ddd;
     z-index: 10;
@@ -874,7 +900,7 @@ top: 0;
     right:-595px;
     top: 0;
     background:#fff;
-    border: 1px solid #008000;
+    /* border: 1px solid #008000; */
     width: 570px;
     box-shadow: 0 0 5px #ddd;
     z-index: 10;
@@ -887,7 +913,7 @@ top: 0;
     right:-595px;
     top: 0;
     background:#fff;
-    border: 1px solid #008000;
+    /* border: 1px solid #008000; */
     width: 570px;
     box-shadow: 0 0 5px #ddd;
     z-index: 10;
@@ -900,7 +926,7 @@ top: 0;
     right:-595px;
     top: 0;
     background:#fff;
-    border: 1px solid #008000;
+    /* border: 1px solid #008000; */
     width: 570px;
     box-shadow: 0 0 5px #ddd;
     z-index: 10;
@@ -908,7 +934,100 @@ top: 0;
     display: none;
 
 }
+.DJS{
+    width: 775px;
+    height: 445px;
+    box-shadow: 0 0 5px #ddd;
+    /* border: 1px */
+    background: #fff;
+    position: absolute;
+    right: -800px;
+    top: -321px;
+    z-index: 11;
+    display: none;
+    
+}
+.DJS-1{
+    width: 362px;
+    height: 172px;
+    float: left;
+    margin-left: 14px;
+    margin-top: 15px;
+    position: relative;
+}
+.DJS-1:nth-child(1){
+    background:url(../img/0b72b189e1f6c1b4766dedc77effb7d2.jpg@!water)no-repeat center;
+    background-size: cover;
+}
+.DJS-1:nth-child(2){
+    background:url(../img/a35b5b9eb5933e6fed7edfaefb310ff0.jpg@!water)no-repeat center;
+    background-size: cover;
+}
+.DJS-1:nth-child(3){
+    background:url(../img/17cf8a1044e374db39c7590023a5afa4.png@!water)no-repeat center;
+    background-size: cover;
+}
+.DJS-1:nth-child(4){
+    background:url(../img/dcf253df55703bd8e3944b27d4d06b4a.jpg@!water)no-repeat center;
+    background-size: cover;
+}
+.djs-a{
+    border: 1px solid #ddd;
+    margin: 15px 14px 16px 22px;
+    background: #fff;
 
+}
+.djs-a a{
+    display: block;
+    width:288px;
+    padding: 16px 19px 22px;
+}
+.djs-a a img{
+    display: block;
+    height: 32px;
+    padding-left: 104px;
+}
+.djs-a a em{
+    display: block;
+    /* background: url(../img/)no-repeat center top; */
+    font-size:17px;
+    color: #333;
+    height: 28px; 
+    line-height: 35px;
+    padding-bottom: 7px;
+    border-bottom: 1px dashed #ddd;
+    text-align: center;
+}
+.djs-a a span{
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size:17px;
+    color: #333;
+}
+.djs-up{
+    position: absolute;
+    background: rgba(69,25,53, 0.6);
+    left: 0;
+    bottom: 0;
+    width: 341px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size:12px;
+    padding-left: 20px;
+}
+.djs-up u{
+    display: block;
+    float: left;
+    padding-left: 24px;
+    background: url(../img/eye.png)no-repeat left center;
+}
+.djs-a1{
+    float: left;
+
+}
+/* erjicaidan */
 .clothes-dog{
     border-bottom: 1px dashed #ddd;
     height: 49px;
