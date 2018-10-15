@@ -48,6 +48,7 @@ gulp.task("script", ()=>{
 gulp.task("watch", ()=>{
     gulp.watch("epet.html",["html","sass"]);
     gulp.watch("sass/*.scss",["html","sass"]);
+    gulp.watch("js/*.js",["html","script"]);
 })
 
 gulp.task("default",["watch","connect"]);

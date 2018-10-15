@@ -172,10 +172,10 @@ header div ul:nth-of-type(1) li:nth-of-type(2) .region dl dd a:hover{
 header .header1 .region-2 .area li a{
     padding: 0 10px;
 }
-header div .region .region-2 .area li{
+header .header1 .region .region-2 .area li{
     background: none;
 }
-header div .region .region-2 .area li a:hover{
+header .header1 .region .region-2 .area li a:hover{
     background: #fb6003;
     color: #fff;
 }
