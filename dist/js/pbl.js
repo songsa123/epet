@@ -36,7 +36,7 @@
           //     var height = json[i].height / (json[i].width / 220);
           //     if(isNaN(height)) continue; 
               html += `   <div class="falls" >
-                            <a href="#"><img src="${json[i].image}" alt=""></a>
+                            <a href="http://localhost:8080/goods.html"><img src="${json[i].image}" alt=""></a>
                             <p class="title-sub">澳洲原装进口 灵动LINGDOK 中大型犬幼犬粮 13.5kg</p>
                             <p class="price">
                                 <span>￥794.40</span>
