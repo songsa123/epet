@@ -38,17 +38,27 @@ gulp.task('connect', function() {
 gulp.task("html", ()=>{
     return gulp.src("*.html").pipe(gulp.dest("dist/")).pipe(connect.reload());;
 })
+
 gulp.task("img", ()=>{
     return gulp.src("img/*").pipe(gulp.dest("dist/img")).pipe(connect.reload());;
 })
 gulp.task("script", ()=>{
     return gulp.src("js/*.js").pipe(gulp.dest("dist/js")).pipe(connect.reload());;
 })
+gulp.task("php", ()=>{
+    return gulp.src("*.php").pipe(gulp.dest("dist/php")).pipe(connect.reload());;
+})
+gulp.task("DL", ()=>{
+    return gulp.src("denglu-login/*").pipe(gulp.dest("dist/denglu-login")).pipe(connect.reload());;
+})
 
 gulp.task("watch", ()=>{
-    gulp.watch("epet.html",["html","sass"]);
+    gulp.watch("*.html",["html","html"]);
     gulp.watch("sass/*.scss",["html","sass"]);
     gulp.watch("js/*.js",["html","script"]);
+    gulp.watch("img/*",["html","img"]);
+    // gulp.watch("*.php",["html","php"]);
+
 })
 
 gulp.task("default",["watch","connect"]);

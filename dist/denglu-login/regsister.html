@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新用户注册</title>		
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		header{
+			border-bottom: #DDDDDD solid 1px;
+			width: 100%;
+			height: 120px;
+		}
+		.header1{
+			width: 1100px;
+			margin: 0 auto;
+			padding: 30px 0;
+		}
+		.header1 .logo{
+			display: inline-block;
+			width: 127px;
+		}
+		.header1 img{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		#p1{
+			margin: 13px 5px 0 0;
+			float: right;
+			font-size: 14px;
+		}
+		#p1 a{
+			color: #7bbfe3;
+		}
+		/* footer */
+		footer{
+			width: 820px;
+			margin: 0 auto;
+			padding: 70px 0;
+		}
+		footer ul{
+			width: 253px;
+			font-size: 12px;
+			height: 16px;
+			line-height: 16px;
+			text-align: center;
+			margin: 0 auto;
+		}
+		footer ul li{
+			float: left;
+			margin-right: 2px;
+		}
+		footer ul li a{
+			color: #999999;
+		}
+		footer p{
+			height: 16px;
+			line-height: 16px;
+			color: #999;
+			margin: 0 auto;
+			font-size: 12px;
+			margin-top: 5px;
+
+		}
+		section{
+			width: 100%;
+			border-bottom:1px solid #ddd; 
+		}
+		.register{
+			padding: 46px 0 0;
+			width: 1100px;
+			margin: 0 auto;
+			/* padding-top:40px; */
+			position: relative;
+			box-sizing: border-box;
+		}
+		.register-box{
+			width:665px;
+			height: 57px;
+			line-height: 57px;
+			margin:0 auto;
+			margin-bottom: 9px;
+			position: relative;
+
+		}
+
+		.register-box .box{
+			width:100%;
+			height:100%;
+			padding-left: 10px;
+			font-size: 16px;
+			color: #000;
+			vertical-align: middle;
+		}
+		/* .register-box .box.error{
+			border:1px solid red;
+		} */
+		.register-box .box input{
+			height: 55px;
+			outline: none;
+			border: 1px solid #ddd;
+			color: #ff6f4a;
+			padding-left:18px; 
+			border-radius: 5px;
+			/* float: left; */
+		}
+		#mobile,#pwd,#userName,#pwd2{
+			width: 416px;
+		}
+	
+		#yzm{
+			width: 209px;
+		}
+		.register-box:nth-child(6){
+			/* width: 730px; */
+			margin-left: 199px;
+		}
+		.register .register-box:nth-child(6) .tip{
+			right: -25px;
+		}
+		.register-box .tip {
+			width: 158px;
+			height: 54px;
+			position: absolute;
+			right: -5px;
+			top: 0;
+			display: none;
+
+		}
+		.register-box .tip span{
+			display: block;
+			width: 158px;
+			height: 54px;
+			/* text-align: center; */
+			line-height: 54px;
+			color: #ff6f4a;
+			background: #fff3d9;
+			font-size: 14px;
+			padding-left: 8px;
+		}
+		.register-box .tip.show{
+			display: block;
+		}
+		
+		.register-box .yzm strong{
+			display: inline-block;
+			width: 102px;
+			border: 1px solid #ddd;
+			height: 55px;
+			line-height: 55px;
+			border-radius:  5px 0 0 5px;
+			vertical-align: top;
+			border-right: none;
+			text-align: center;
+		}
+		.register-box .yzm a{
+			display: inline-block;
+			height: 55px;
+			width: 85px;
+			border-radius: 0  5px 5px 0 ;
+			border: 1px solid #ddd;
+			border-left: none;
+			color: #d4d4d4;
+			line-height: 55px;
+			padding-left: 10px;
+		}
+		.register-box .yzm a  img{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 7px;
+		}
+		.register-box:nth-child(3){
+			/* width: 730px; */
+			margin-left: 187px;
+		}
+		.register .register-box:nth-child(3) .tip{
+			right: -34px;
+		}
+		#gets{
+			border: 1px solid #33cb98;
+			display: inline-block;
+			width: 150px;
+			height: 55px;
+			margin-left: 7px;
+			border-radius: 5px;
+			vertical-align: top;
+			/* margin-top: 5px; */
+			color: #ddd;
+			text-align: center;
+		}
+		#a1:hover{
+			color: #427fd2;
+		}
+		#msg{
+			display: inline-block;
+			width: 255px;
+		}
+
+		/* .register-box .tip.error span{
+			color: red;
+		} */
+
+		
+		.register-box.xieyi{
+			width:675px;
+			height: 20px;
+			padding-bottom: 30px;
+			margin: 0 auto;
+			margin-left: 282px;
+		/*	background-color: #ccc;*/
+		}
+		.register-box.xieyi .box{
+			line-height: normal;
+			padding: 0;
+			border: none;
+		}
+		.register-box.xieyi .box.error{
+			line-height: normal;
+			padding: 0;
+			border: 1px solid red;
+		}
+		/* .register-box.xieyi .box input{
+			width: auto;
+		} */
+		#ck{
+			height: 20px;
+			vertical-align: middle;
+
+		}
+		 button{
+			width: 412px;
+			height: 58px;
+			line-height: 58px;
+			text-align: center;
+			font-size:20px;
+			color: white;
+			background-color:#ededed;
+			cursor: pointer;
+			border: none;
+			border-radius: 5px;
+			margin-left: 395px;
+			margin-bottom: 50px;
+		}
+
+		.accpet{
+			color: #427fd2;
+		}
+	</style>
+	
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<div class="header1">
+			<a href="file:///D:/PHPnow/htdocs/php-level2/project/epet/epet.html">
+				<img src="img/cart-logo.png" alt="" class="logo">
+			</a>
+			<img src="img/welcome_07.jpg">
+			<p id="p1">已有账号？<a href="http://localhost/php-level2/project/epet/denglu-login/login.html">立即登录</a></p>
+		</div>
+	</header>
+		<!-- section -->
+	<section>
+			<!--e宠注册模块-->
+    	<!-- <div > -->
+	<form action="" method="post"class="register" id="register">
+			<!--手机验证-->
+    		<div class="register-box">
+				<!--表单项-->
+				<div class="box default">
+					<label for="mobile">手机号:</label>
+					<input type="text" id="mobile" placeholder="请输入手机号"name="" />				
+				</div>
+				<!--提示信息-->
+				<div class="tip">		
+					<span class="span1"></span>
+				</div>
+			</div>
+			<!-- 验证码 -->
+			<div class="register-box">
+					<!--表单项-->
+					<div class="box yzm">
+						<label for="mobile">验证码:</label>
+						<input type="text" id="yzm" placeholder="请输入图片内容" name="" />
+						<strong></strong>
+						<a href="javascript:void(0)" id="a1"><img src="img/renfren_03.jpg">换一换</a>	
+						
+					</div>
+					<!--提示信息-->
+					<div class="tip">
+						<span class="span1"></span>
+					</div>
+				</div>
+				<!-- 短信验证码 -->
+			<div class="register-box">
+					<!--表单项-->
+					<div class="box msg">
+						<label for="mobile">短息验证码:</label>
+						<input type="text" id="msg" placeholder="验证码" name=""/><a href="#" id="gets" >获取验证</a>
+					</div>
+					<!--提示信息-->
+					<div class="tip">
+						<span class="span1"></span>
+					</div>
+				</div>
+    		<!--用户名-->
+    		<div class="register-box">
+    			<!--表单项-->
+    			<div class="box default">
+    				<label for="userName">用户名:</label>
+    				<input type="text" id="userName" placeholder="用户名"name="" />
+    			</div>
+    			<!--提示信息-->
+    			<div class="tip">
+    				<span class="span1"></span>
+    			</div>
+    		</div>
+    		<!--设置密码-->
+    		<div class="register-box">
+    			<!--表单项-->
+    			<div class="box default">
+    				<label for="pwd">密码：</label>
+    				<input type="password" id="pwd" placeholder="密码 （8-20位，区分大小写）" name=""/>
+    			</div>
+    			<!--提示信息-->
+    			<div class="tip">
+    				<span class="span1"></span>
+    			</div>
+    		</div>
+    		<!--确认密码-->
+    		<div class="register-box">
+    			<!--表单项-->
+    			<div class="box default">
+    				<label for="pwd2">确认密码:</label>
+    				<input type="password" id="pwd2" placeholder="确认密码" name="" />
+    			</div>
+    			<!--提示信息-->
+    			<div class="tip">
+    				<span class="span1"></span>
+    			</div>
+    		</div>
+    		
+    		 <!--注册协议-->
+    		<div class="register-box xieyi">
+    			<!--表单项-->
+    			<div class="box default">
+    				<input type="checkbox" id="ck" checked name=""/>
+    				<span id="read">我已阅读并接受E宠<a href="https://www.epet.com/article37.html" target="_blank" class="accpet">《用户使用协议》</a></span>
+    			</div>
+    			<!--提示信息-->
+    			<div class="tip">
+    				<span></span>
+    			</div>
+    		</div>
+
+		<!-- </div> -->
+		</form>
+	<!--注册-->
+	<button id="btn">注册</button>
+	</section>
+		<!-- footer -->
+		<footer>
+			<ul>
+				<li><a href="#" target="_blank">E宠商城  |</a></li>
+				<li><a href="#" target="_blank">知识 |</a></li>
+				<li><a href="#" >关于我们 |</a></li>
+				<li><a href="#" >联系我们</a></li>
+			</ul>
+			<p>渝ICP备13005525号-2   渝ICP备 10002905  增值电信业务经营许可证：渝B2-20140042   Copyright © 2007-2016 epet.com  重庆易宠科技有限公司</p>
+		</footer>
+	</header>
+	<script type="text/javascript">
+		window.onload = function(){
+            var oUser = document.getElementById("userName");
+			 var oPwd = document.getElementById("pwd");
+            //  var oPwd2 = document.getElementById("pwd2");		 
+			var input = document.getElementsByTagName("input");
+			var span = document.getElementsByTagName("span");
+			var oBtn = document.getElementById("btn");	
+			var tip=document.getElementsByClassName("tip")
+			var arr = [0,0,0,0,0,0,0];
+			input[0].onblur = function(){
+				var str = this.value;
+				if(str != ""){
+					var reg = (/^1[34578]\d{9}$/);
+					if(reg.test(str)){
+						tip[0].style.display = "none";
+						arr[0] = 1; 
+					}else{
+						span[0].innerText = "请输入11位电话号码";
+						tip[0].style.display = "block";
+						input[0].style.borderColor="red";
+						arr[0] = 2;
+
+					}
+				}
+				
+			};
+			input[3].onblur = function(){
+				var str = this.value;
+				if(str != ""){
+					var reg = /^[a-z0-9]{4,20}$/i;
+					if(reg.test(str)){
+						tip[3].style.display = "none";
+						arr[1] = 1; 
+					}else{
+						span[3].innerText = "请输入4-20位用户名";
+						tip[3].style.display = "block";
+						input[3].style.borderColor="red";
+						arr[1] = 2;
+					}
+				}				
+			};
+			
+			input[4].onblur = function(){
+				var str = this.value;
+				if(str != ""){
+					var reg = /^\w{8,20}$/;
+					if(reg.test(str)){
+						tip[4].style.display = "none";
+						arr[4] = 1; 
+					}else{
+						span[4].innerText = "请输入6-20位密码";
+						tip[4].style.display = "block";
+						input[3].style.borderColor="red";
+						arr[4] = 2; 
+					}
+				}
+			};
+
+			input[5].onblur = function(){
+				var str = this.value;
+				if(str != "")
+				{
+					var str1 = input[4].value;
+					if(str === str1){
+						tip[5].style.display = "none";
+						arr[5] = 1; 
+					}else{
+						span[5].innerText = "两次密码不匹配";
+						tip[5].style.display = "block";
+						input[5].style.borderColor="red";
+						arr[5] = 2; 
+					}
+				}
+				
+			};
+			
+			
+			oBtn.onclick = function(){
+				var num = arr[0] * arr[1] * arr[4] * arr[5];
+				if(num == 0){
+					alert("您未输入完");
+				}else if(num == 1){
+					alert("验证成功");
+					
+				}else{
+					alert("您输入不合法");
+                }
+                
+                var url = "http://localhost/php-level2/project/epet/denglu-login/php/register.php";
+                    ajaxPost(url,`username=${oUser.value}&password=${oPwd.value}`)
+                    .then(function(res){
+                        console.log(res);
+                    })
+                };
+		}
+    </script>
+
+
+
+
+	<script src="js/jquery-3.3.1.js"></script>	
+	<script src="js/ajax.js"></script>
+	<script src="js/regsister.js"></script>
+	<script src="js/picyanzheng.js"></script>
+</body>
+</html>

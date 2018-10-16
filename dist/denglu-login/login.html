@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录中心</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        #header{
+            padding: 30px 0;
+            width: 1100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #header img{
+            display: block;
+            float: left;
+        }
+        #header  ol{
+            height: 100%;
+            width: 145px;
+            float: right;
+            margin-right: 24px;
+        }
+        #header  ol li .a1{
+            display: block;
+            font-size: 14px;
+            color: #666767;
+            float: left;
+            height: 14px;
+            line-height: 14px;
+        }
+        #header  ol li .a1:hover{
+            color:#07a3ea;
+            text-decoration: none;
+        }
+        .contains{
+            width: 100%;
+            height: 630px;
+            background: url(img/2d257810fae43df21b50315d48c519a0.jpg)no-repeat center
+        }
+        .wrap{
+            width: 350px;
+            /* height: 370px; */
+            background: #fff;
+            float: right;
+            margin-right: 123px;
+            margin-top:73px;
+        }
+        .title{
+            font-size: 17px;
+            height: 17px;
+            line-height: 17px;
+            /* margin-bottom: 18px; */
+            display: flex;
+            /* padding: 0 50px; */
+            justify-content: space-between;
+            /* margin-top: 30px; */
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin: 30px 50px 18px;
+        }
+        .title p{
+            color: #666666;
+            
+        }
+        .title p.active{
+            border-bottom: 1px solid seagreen;
+            padding-bottom: 38px;
+
+        }
+        
+        #login{
+            padding:15px 20px 0;
+            border-top: 1px solid #f4f4f4;
+            overflow: hidden;
+        }
+        #login input{
+            height: 38px;
+            outline: none;
+            line-height: 38px;
+            font-size: 14px;
+            color: #d4d4d4;
+            margin-top: 20px;
+            float: left;
+            border: none;
+            border:1px solid #bdbdbd;
+            width: 253px;
+            padding-left: 12px;
+        }
+        #login p{
+            float: left;
+            width: 38px;
+            height: 38px;
+            background:#f4f4f4;
+            margin-top: 20px;
+            border: 1px solid #bdbdbd;
+            border-right: none;
+
+        }
+        #login p:nth-child(1) span{
+            display: inline-block;
+            width: 23px;
+            height: 19px;
+            background:#f4f4f4 url(img/ico.png)no-repeat center;
+            background-position: 0 0;
+            margin: 8px;
+            
+         }
+         #login p:nth-of-type(2) span{
+            display: inline-block;
+            width: 23px;
+            height: 19px;
+            background:#f4f4f4 url(img/ico.png)no-repeat center;
+            background-position: 0 -28px;
+            margin: 8px;
+            
+         }
+        .forget{
+            width: 305px;
+            height: 58px;
+            line-height: 58px;
+            padding: 0 20px;
+        }
+        .forget a{
+            display: block;
+            font-size: 12px;
+            color:#666666;
+            float: right;
+        }
+        #login1{
+            margin: 0 20px;
+            width: 305px;
+            height: 50px;
+            background: #33cb98;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+            border: none;
+            font-size: 20px;
+            letter-spacing: 25px;
+            margin-bottom: 30px;
+            outline: none;
+            border-radius: 5px;
+        }
+        ul{
+            height: 52px;
+            width: 295px;
+            margin: 0 auto;
+        }
+        ul li{
+            float: left;
+            
+            height: 18px;
+        }
+        ul li a{
+            display: block;
+          margin-right: 10px;
+          background: url(img/ico.png)no-repeat center;
+          width: 23px;
+          height: 19px;
+        }
+        ul li:nth-child(1) a{
+            background-position: 0 -144px;
+        }
+        ul li:nth-child(2) a{
+            background-position: 0 -86px;
+        }
+        ul li:nth-child(3) a{
+            background-position: 0 -170px;
+        }
+       
+      
+       
+        .forget input{
+            width: 14px;
+            height: 14px;
+            outline: none;
+            float: left;
+            margin-top: 22px;
+        }
+        .forget b{
+            display: block;
+            float: left;
+            font-size: 12px;
+            color: #666;
+        }
+        .end{
+            width:294px;
+            height: 47px; 
+            margin: 0 auto;
+        }
+        .end p:nth-of-type(1){
+            float: left;
+            font-size: 12px;
+            color: #666;   
+        }
+        .end p:nth-of-type(2) a{
+            display: block;
+            float: right;
+            font-size: 12px;
+            color: #666;   
+        }
+        .end p:nth-of-type(2) a:hover{
+            color: #07a3ea;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="img/cart-logo.png" alt="">
+        <ol>
+            <li><a href="https://www.epet.com/brandsale/main.html" target="_blank"class="a1">品牌特卖 |</a ></li>
+            <li><a href="https://www.epet.com/brand/main.html" target="_blank"class="a1">试用中心 </a></li>
+        </ol>
+    </div>
+    <div class="contains">
+            <div class="wrap">
+                    <div class="title">
+                        <p class="active">普通登录</p>
+                        <p>手机动态码登录</p>
+                    </div>
+                    <!-- <form action="" method=""> -->
+                    <div id="login">
+                        <p><span></span></p><input type="text" id="username"  placeholder="邮箱/用户名/已验证手机" name="">
+                        <p><span></span></p><input type="password" id="password" placeholder="密码" name="">
+                    </div>
+                        <p class="forget">
+                            <input type="checkbox" name="" id="" checked><b>自动登录</b>
+                            <a href="#">忘记密码</a></p>
+                        <button id="login1">登录</button>
+                <!-- </form> -->
+                        <div class="end">
+                          <p>合作网站登录</p>
+                       <p><a href="http://localhost/php-level2/project/epet/denglu-login/regsister.html">注册账号</a></p>  
+                        </div>
+                       
+                        <ul class="com">
+                            <li><a href="#">
+                            </a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                             
+                        </ul>
+                    
+                </div>
+    </div>
+    
+    <script src="js/ajax.js"></script> 
+    <script>
+        var oBtn=document.getElementById("login1");
+        var oUser=document.getElementById("username");
+        var oPwd=document.getElementById("password");
+        oBtn.onclick=function(){
+            url="http://localhost/php-level2/project/epet/denglu-login/php/login.php";
+            ajaxPost(url,`username=${oUser.value}&password=${oPwd.value}`)
+            .then(function(res){
+                console.log(res)
+            })
+          
+        }
+        // window.open("");
+
+
+    </script>
+</body>
+</html>
