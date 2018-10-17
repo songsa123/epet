@@ -1,0 +1,140 @@
+section {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px; }
+  section .section1 {
+    position: relative;
+    border-bottom: 2px #ddd solid;
+    margin-top: 50px; }
+    section .section1 li {
+      float: left;
+      padding: 0 30px;
+      font-size: 15px;
+      padding-bottom: 20px; }
+      section .section1 li a {
+        color: #686461; }
+      section .section1 li i {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+        vertical-align: middle; }
+    section .section1 li:nth-child(1) i {
+      background: url(../img/newtips.png) no-repeat center;
+      background-position: 0 0; }
+    section .section1 li:nth-child(2) i {
+      background: url(../img/newtips.png) no-repeat center;
+      background-position: 0 -90px; }
+    section .section1 li:nth-child(2):hover i {
+      background: url(../img/newtips.png) no-repeat center;
+      background-position: 0 -59px; }
+    section .section1 .licar {
+      border-bottom: 2px solid #f60; }
+      section .section1 .licar a {
+        color: #f60; }
+  section .section2 {
+    width: 1200px;
+    height: 322px;
+    text-align: center;
+    padding-top: 30px; }
+    section .section2 .null {
+      background: url(../img/null-cart.png) no-repeat;
+      width: 170px;
+      height: 130px;
+      margin-left: 300px;
+      float: left; }
+    section .section2 .null2 {
+      float: left;
+      width: 450px;
+      margin-top: 30px; }
+      section .section2 .null2 h1 {
+        font-size: 30px;
+        color: #999; }
+      section .section2 .null2 p {
+        height: 40px;
+        margin-top: 20px; }
+        section .section2 .null2 p a {
+          display: block;
+          float: left;
+          width: 100px;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          background: #4fb20a;
+          font-size: 12px;
+          color: #fff;
+          margin: 0 20px;
+          border-radius: 5px; }
+  section .section3 {
+    display: block;
+    width: 1200px;
+    height: 350px;
+    margin: 0 auto; }
+  section .section4 {
+    width: 1200px;
+    margin: 10px auto 0; }
+    section .section4 li {
+      float: left;
+      margin: 10px 8px 0;
+      width: 280px;
+      height: 350px;
+      border: 1px solid #ddd; }
+      section .section4 li .img1 {
+        display: block;
+        margin: 60px 110px; }
+      section .section4 li p {
+        height: 60px;
+        color: #666;
+        line-height: 60px;
+        text-align: center; }
+      section .section4 li span {
+        display: block;
+        font-size: 20px;
+        color: #d52935;
+        padding-left: 20px; }
+        section .section4 li span i {
+          margin-left: 8px;
+          color: #ddd;
+          font-size: 16px;
+          text-decoration: line-through; }
+        section .section4 li span b {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          margin-left: 60px; }
+          section .section4 li span b img {
+            vertical-align: middle; }
+
+.sp {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 1000px;
+  right: 50px;
+  width: 80px;
+  height: 50px; }
+
+#d-car {
+  z-index: 100; }
+
+.M-box a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: #ddd;
+  color: #222;
+  float: left;
+  margin-right: 5px; }
+
+.M-box span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: #ddd;
+  color: #222;
+  float: left;
+  margin-right: 5px; }

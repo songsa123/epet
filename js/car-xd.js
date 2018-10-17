@@ -5,9 +5,10 @@ window.onscroll = function(){
     if(scrollTop >= 28){
         oCar.style.position = "fixed"
         oCar.style.height="28"+"px";
+        oCar.style.top = 0 ;
 
     }else{
-        oCar.style.position = "absolute";
+        oCar.style.position = "fixed";
         oCar.style.top = 0 ;
     }
 }

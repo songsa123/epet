@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/youbiandaohang.css">
     <link rel="stylesheet" href="css/com.css">
+    <link rel="stylesheet" href="css/shopcar.css">
 </head>
 <body>
         <header id="d-car">
@@ -167,58 +168,51 @@
                 </div>
         </header> 
         <!-- section -->
-        <section >
-
+        <section>
+            <ul class="section1 clearfix">
+                <li class="licar">
+                    <i></i>
+                    <a href="#">E宠购物车</a>
+                    <span id="shopNum"></span>
+                </li>
+                <li>
+                    <i></i>
+                    <a href="#">E宠国际购物车</a>
+                </li>
+                <li><a href="#">我的收藏</a></li>
+                <li><a href="#">我购买过</a></li>
+                <li><a href="#">最近浏览</a></li>
+            </ul>
+            <div class="section2">
+                <div class="null"></div>
+                <div class="null2">
+                        <h1>您购物车空空的，快去选购吧！</h1>
+                        <p>
+                            <a href="#">一键购买</a>
+                            <a href="#">去首页</a>
+                        </p>
+                </div>
+            </div>
+            <a class="section3">
+                <img src="img/210c2037582c2e460ca368721a7dcb90.jpg@!water" alt="">
+            </a>
+            <ol class="section4 clearfix shoplist " style="position: relative">
+                <!-- <li>
+                    <a href="#">
+                        <img src="img/1.jpg" class="img1">
+                        <p>开饭乐 切刻奶味磨牙骨 200g 奶味</p>
+                        <span>￥14.95 <i>￥29.90</i>
+                        <b class="btn"><img src="img/cart.png" alt=""></b>
+                        </span>
+                    </a>
+                </li> -->
+            </ol>
+            <div class="M-box" style="margin-left: 300px;"></div>
+            <button class="sp" >
+                <a href="shopcar.html">购物车</a>
+                <span id="shopNum">0</span>
+            </button>
         </section>
-        <!-- search -->
-        <div class="search">
-            <div class="search1 clearfix">
-                <div class="logo">
-                    <img src="img/epet-logo.png" alt="" title="E宠商城">
-                </div>
-                <div class="search-a">
-                    <form action="">
-                        <input type="text"id="txt" name="" placeholder="丝倍亮">
-                        <input type="button" id="search" name="" value="搜索">
-                        <ol id="res">
-                            </ol>
-                    </form>
-                    <ul class="clearfix">
-                        <li>热门搜索：<span>麦德氏</span></li>
-                        <li><a href="#" target="_blank">比瑞吉</a></li>
-                        <li><a href="#" target="_blank">鲜肉粮</a></li>
-                        <li><a href="#" target="_blank">伯纳天纯</a></li>
-                        <li><a href="#" target="_blank">顽皮</a></li>
-                    </ul>
-                </div>
-                <div class="shopping">
-                    <a href="#" target="_blank">购物车（<span>0</span>）</a>
-                </div>
-            </div>
-        </div>
-        <!-- nav -->
-        <div class="nav">
-            <div class="nav1">
-                <div class="nava">
-                    <div class="nava-left">
-                        <a href="#" target="_blank">狗狗<i></i></a>
-                    </div>
-                    <div class="nava-right">
-                        <a href="#" target="_blank">商品分类<i></i></a>
-                    </div>
-                </div>
-                <ul class="navb">
-                    <li><a href="#" target="_blank"><img src="img/epethk-logo.png"></a></li>
-                    <li class="active"><a href="#" target="_blank"><b></b>品牌特卖</a></li>
-                    <li><a href="#" target="_blank"><b></b>超频视频</a></li>
-                    <li><a href="#" target="_blank"><b></b>小剧场</a></li>
-                    <li><a href="#" target="_blank"><b></b>E宠课堂</a></li>
-                    <li><a href="#" target="_blank"><b></b>萌爪联盟</a></li>
-                    <li><a href="#" target="_blank"><b></b>特价清仓</a></li>
-                </ul>
-            </div>
-        </div>
-
         <!--  -->
         <!-- footer -->
     <footer>
@@ -331,7 +325,14 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#"><i></i><u>购物车</u><b>0</b></a>
+                    <!-- <button> -->
+                        <a href="#" target="_blank">
+                        <i></i>
+                        <u>购物车</u>
+                        <b >0</b>
+                        </a>
+                    <!-- </button> -->
+                    
                     <div>您的购物车里暂没有商品，赶快选择心爱的商品吧！</div>
                 </li>
                 <li><a href="#">
@@ -384,8 +385,15 @@
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/region.js"></script>
 <script src="js/mypet.js"></script>
-<script src="js/epet-search.js"></script>
+<!-- <script src="js/epet-search.js"></script> -->
 <script src="js/gotop.js"></script>
 <script src="js/ajax.js"></script>
 <script src="js/car-xd.js"></script>
+<script src="js/car.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/shopcar.js"></script>
+<script src="js/jquery.pagination.js"></script>
+
+
 

@@ -52,7 +52,7 @@ gulp.task("script", ()=>{
 //     return gulp.src("denglu-login/*").pipe(gulp.dest("dist/denglu-login")).pipe(connect.reload());;
 // })
 gulp.task("DJ", ()=>{
-    return gulp.src("data.json").pipe(gulp.dest("dist/")).pipe(connect.reload());;
+    return gulp.src("*.json").pipe(gulp.dest("dist/")).pipe(connect.reload());;
 })
 
 gulp.task("watch", ()=>{
@@ -60,6 +60,7 @@ gulp.task("watch", ()=>{
     gulp.watch("sass/*.scss",["html","sass"]);
     gulp.watch("js/*.js",["html","script"]);
     gulp.watch("img/*",["html","img"]);
+    gulp.watch("*/json",["html","DJ"]);
 
     // gulp.watch("*.php",["html","php"]);
 
