@@ -255,7 +255,7 @@
 				<img src="img/cart-logo.png" alt="" class="logo">
 			</a>
 			<img src="img/welcome_07.jpg">
-			<p id="p1">已有账号？<a href="http://localhost/php-level2/project/epet/denglu-login/login.html">立即登录</a></p>
+			<p id="p1">已有账号？<a href="http://localhost:8080/login.html">立即登录</a></p>
 		</div>
 	</header>
 		<!-- section -->
@@ -457,7 +457,7 @@
 					alert("您输入不合法");
                 }
                 
-                var url = "http://localhost/php-level2/project/epet/denglu-login/php/register.php";
+                var url = "http://localhost:8080/proxy/localhost/php-level2/project/epet/denglu-login/php/register.php";
                     ajaxPost(url,`username=${oUser.value}&password=${oPwd.value}`)
                     .then(function(res){
                         console.log(res);

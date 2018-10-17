@@ -242,7 +242,7 @@
                 <!-- </form> -->
                         <div class="end">
                           <p>合作网站登录</p>
-                       <p><a href="http://localhost/php-level2/project/epet/denglu-login/regsister.html">注册账号</a></p>  
+                       <p><a href="http://localhost:8080/regsister.html">注册账号</a></p>  
                         </div>
                        
                         <ul class="com">
@@ -262,7 +262,7 @@
         var oUser=document.getElementById("username");
         var oPwd=document.getElementById("password");
         oBtn.onclick=function(){
-            url="http://localhost/php-level2/project/epet/denglu-login/php/login.php";
+            url="http://localhost:8080/proxy/localhost/php-level2/project/epet/denglu-login/php/login.php";
             ajaxPost(url,`username=${oUser.value}&password=${oPwd.value}`)
             .then(function(res){
                 console.log(res)

@@ -40,5 +40,6 @@
         die("数据库错误".mysql_error());
     }
     echo "注册成功";
+    // echo '<meta http-equiv="Refresh" content="5;url=http://localhost:8080/epet.html" />
 
 ?>

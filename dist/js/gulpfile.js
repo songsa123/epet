@@ -36,14 +36,14 @@ gulp.task('connect', function() {
 // localhost:8888/proxy/目标;
 
 gulp.task("html", ()=>{
-    return gulp.src("*.html").pipe(gulp.dest("dist/")).pipe(connect.reload());;
+    return gulp.src("**/*.html").pipe(gulp.dest("dist/")).pipe(connect.reload());;
 })
 
 gulp.task("img", ()=>{
-    return gulp.src("img/*").pipe(gulp.dest("dist/img")).pipe(connect.reload());;
+    return gulp.src("**/img/*.").pipe(gulp.dest("dist/img")).pipe(connect.reload());;
 })
 gulp.task("script", ()=>{
-    return gulp.src("js/*.js").pipe(gulp.dest("dist/js")).pipe(connect.reload());;
+    return gulp.src("**/*.js").pipe(gulp.dest("dist/js")).pipe(connect.reload());;
 })
 // gulp.task("php", ()=>{
 //     return gulp.src("*.php").pipe(gulp.dest("dist/php")).pipe(connect.reload());;

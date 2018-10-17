@@ -136,10 +136,7 @@ $("btn").click(function(e){
 	}
 	
 })
-$("#btn").click(function(){
-	// alert()
-	window.location.href="http://localhost/php-level2/project/epet/epet.html";
-})
+// 
 
 
 
