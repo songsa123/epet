@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>购物车- E宠商城</title>
+    <title>E宠购物车清单</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/youbiandaohang.css">
     <link rel="stylesheet" href="css/com.css">
-    <link rel="stylesheet" href="css/shopcar.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/jquery.min.js"></script>	
+    <link rel="stylesheet" href="css/shopcarlist.css">
+
 </head>
 <body>
-        <header id="d-car">
+        <header>
             <div class="header1">
                 <ul>
                     <li><a href="http://localhost:8080/epet.html" target="_blank">E宠首页</a></li>
@@ -141,7 +144,7 @@
                 <ul>
                     <li><a href="http://localhost:8080/login.html" target="_blank">[登陆]</a></li>
                     <li><a href="http://localhost:8080/regsister.html" target="_blank">[注册]</a></li>
-                    <li><b ></b><a href="http://localhost:8080/shopcarlist.html" target="_blank" class="sp1">购物车（<span class="shopNum1">0</span>）</a></li>
+                    <li><b ></b><a href="http://localhost:8080/shopcarlist.html" target="_blank" class="sp1">购物车（<span class="shopNum1"></span>）</a></li>
                     <li class="li-epet">
                         <i></i><a href="#" target="_blank" class="myepet">我的E宠<b></b><em></em></a>
                         <ol class="ec">
@@ -167,52 +170,40 @@
                 </ul>
                 </div>
         </header> 
-        <!-- section -->
-        <section>
-            <ul class="section1 clearfix">
-                <li class="licar">
-                    <i></i>
-                    <a href="#">E宠购物车</a>
-                    <span ></span>
-                </li>
-                <li>
-                    <i></i>
-                    <a href="#">E宠国际购物车</a>
-                </li>
-                <li><a href="#">我的收藏</a></li>
-                <li><a href="#">我购买过</a></li>
-                <li><a href="#">最近浏览</a></li>
-            </ul>
-            <div class="section2">
-                <div class="null"></div>
-                <div class="null2">
-                        <h1>您购物车空空的，快去选购吧！</h1>
-                        <p>
-                            <a href="http://localhost:8080/epet.html" target="_blank">一键购买</a>
-                            <a href="http://localhost:8080/epet.html" target="_blank">去首页</a>
-                        </p>
+       <!-- section -->
+       <section>
+           <div class="section1">
+                <div class="shoplist">
+                    <!--
+                        '<div class="shop-item clearfix">'+
+                            '<p class="fl"><input type="checkbox" class="ck"/></p>'+
+                            '<img class="fl" src="img/'+ shopinfo.src +'" alt="" />'+
+                            '<p class="fl">'+ shopinfo.name +'</p>'+
+                            '<span class="fl">'+ shopinfo.price +'元</span>'+
+                            '<p class="fl count" '+
+                                'data-id="'+ shopinfo.id +'" '+
+                                'data-price="'+ shopinfo.price1 +'" data-count="'+ shopinfo.count +'"'+
+                                'data-name="'+ shopinfo.name +'" data-src="'+ shopinfo.src +'"'+
+                                '>'+
+                                '<span class="updateCount" data-number="1">+</span>'+
+                                '<span class="shop-count">'+ shopinfo.count +'</span>'+
+                                '<span class="updateCount" data-number="-1">-</span>'+
+                            '</p>'+
+                            '<em class="fl sumPrice">'+ (shopinfo.count * shopinfo.price) +'元</em>'+
+                            '<i class="fl delBtn">删除</i>'+
+                        '</div>';
+                    -->
+                </div>
+                <div id="sum" class="clearfix">
+                    共   <span class="count2"></span>件商品，合计<span class="money2"></span>元
+                    <label class="fl">
+                        <input id="selectAll" type="checkbox"/>全选
+                    </label>
                 </div>
             </div>
-            <a class="section3">
-                <img src="img/210c2037582c2e460ca368721a7dcb90.jpg@!water" alt="">
-            </a>
-            <ol class="section4 clearfix shoplist " style="position: relative">
-                <!-- <li>
-                    <a href="#">
-                        <img src="img/1.jpg" class="img1">
-                        <p>开饭乐 切刻奶味磨牙骨 200g 奶味</p>
-                        <span>￥14.95 <i>￥29.90</i>
-                        <b class="btn"><img src="img/cart.png" alt=""></b>
-                        </span>
-                    </a>
-                </li> -->
-            </ol>
-            <div class="M-box" style="margin-left: 300px;height: 30px;"></div>
-            <!-- <button class="sp" >
-                <a href="shopcar.html">购物车</a>
-                <span id="shopNum">0</span>
-            </button> -->
-        </section>
+       </section>
+       
+
         <!--  -->
         <!-- footer -->
     <footer>
@@ -325,14 +316,14 @@
                     </div>
                 </li>
                 <li>
-                    <button class="sp sp1">
-                        <a href="http://localhost:8080/shopcarlist.html" target="_blank">
-                        <i></i>
-                        <u >购物车</u>
-                        <b id="shopNum" class="shopNum1">0</b>
+                    <button class="sp1">
+                        <a href="http://localhost:8080/shopcarlist.html">
+                            <i></i>
+                            <u >购物车</u>
+                            <b class="shopNum1">0</b>
                         </a>
                     </button>
-                    
+                   
                     <div>您的购物车里暂没有商品，赶快选择心爱的商品吧！</div>
                 </li>
                 <li><a href="#">
@@ -388,12 +379,37 @@
 <!-- <script src="js/epet-search.js"></script> -->
 <script src="js/gotop.js"></script>
 <script src="js/ajax.js"></script>
-<script src="js/car-xd.js"></script>
-<script src="js/car.js"></script>
-<script src="js/jquery.min.js"></script>
 <script src="js/cookie.js"></script>
-<script src="js/shopcar.js"></script>
-<script src="js/jquery.pagination.js"></script>
+<script src="js/shopcarlist2.js"></script>
+<script src="js/shopcarlist.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

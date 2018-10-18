@@ -60,7 +60,8 @@ gulp.task("watch", ()=>{
     gulp.watch("sass/*.scss",["html","sass"]);
     gulp.watch("js/*.js",["html","script"]);
     gulp.watch("img/*",["html","img"]);
-    gulp.watch("*/json",["html","DJ"]);
+    gulp.watch("*.json",["html","DJ"]);
+    gulp.watch("css/*.css",["html","css"]);
 
     // gulp.watch("*.php",["html","php"]);
 

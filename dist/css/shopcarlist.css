@@ -1,0 +1,57 @@
+.shoplist {
+  width: 1200px;
+  margin: 0 auto; }
+
+.shop-item {
+  width: 100%;
+  /*border: 1px solid #d1d1d1;*/
+  margin: 20px auto;
+  text-align: center; }
+
+.fl {
+  float: left; }
+
+.shop-item input[type="checkbox"] {
+  width: 30px;
+  height: 30px; }
+
+.shop-item .fl {
+  padding: 10px;
+  width: 129px;
+  display: block;
+  font-style: normal;
+  height: 150px;
+  border: 1px solid #d1d1d1;
+  margin-left: -1px; }
+
+.shop-item .fl:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%; }
+
+.shop-item .count > span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d1d1d1;
+  line-height: 30px;
+  cursor: pointer;
+  margin-left: 5px; }
+
+#sum {
+  width: 1200px;
+  margin: 20px auto 100px;
+  text-align: center; }
+
+section {
+  width: 1200px;
+  margin: 0 auto; }
+
+#right-nav-list1 .sp {
+  background: none;
+  border: none; }
+
+.sp1 {
+  background: none;
+  border: none; }

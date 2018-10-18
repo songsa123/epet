@@ -32,7 +32,7 @@ var index = 1;//页码
 				conStr += `<li>
                             <img src="img/${pro.src}" class="img1">
                             <p>${ pro.name }</p>
-                            <span>${ pro.price1 } <i>${ pro.price2 }</i>
+                            <span>￥${ pro.price1 } <i>${ pro.price2 }</i>
                             <b>
                                 <img src="img/${pro.src2}" alt="">
                             </b>
@@ -172,7 +172,7 @@ var index = 1;//页码
 				}else{
 					clearInterval(timer);
 					$img.remove();
-					$(".sp #shopNum").html( Number($(".sp #shopNum").html()) + 1 );
+					$(".sp1 .shopNum1").html( Number($(".sp1 .shopNum1").html()) + 1 );
 				}
 			}.bind(this),20)
 		}
@@ -190,7 +190,7 @@ var index = 1;//页码
 				count += brr[i].count;
 			}
 			//console.log(count);
-			$(".sp #shopNum").html(count);
-			console.log($("#shopNum").html());
+			$(".sp1 .shopNum1").html(count);
+			console.log($(".shopNum1").html());
 		}
 	}

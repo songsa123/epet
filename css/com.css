@@ -32,7 +32,7 @@ header .header1 ul  li b{
     color: #000;
 }
 header .header1 ul:nth-of-type(1){
-    margin-right: 383px;
+    margin-right: 360px;
 }
 header .header1 ul:nth-of-type(1) li:nth-of-type(1){
     background: url(../img/epetbrand.png)no-repeat 7px 7px;
@@ -869,3 +869,7 @@ footer .footer-title li:nth-of-type(6) a{
     float: left;
     color: #222;
 }
+/*  */
+/* header .header1 .sp .shopNum1{
+    position: absolute;
+} */
