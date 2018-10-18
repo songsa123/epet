@@ -8,7 +8,7 @@
         "src2":"cart.png"
     },
 	{
-		"id" : "shop01",
+		"id" : "shop02",
 		"name" : "开饭乐 切刻奶味磨牙骨 200g 奶味",
 		"src" : "2.jpg",
         "price1" : "￥14.95",
@@ -16,7 +16,7 @@
         "src2":"cart.png"
     },
 	{
-		"id" : "shop01",
+		"id" : "shop03",
 		"name" : "开饭乐 切刻奶味磨牙骨 200g 奶味",
 		"src" : "2.jpg",
         "price1" : "￥14.95",
@@ -24,7 +24,7 @@
         "src2":"cart.png"
     },
 	{
-		"id" : "shop01",
+		"id" : "shop04",
 		"name" : "开饭乐 切刻奶味磨牙骨 200g 奶味",
 		"src" : "4.jpg",
         "price1" : "￥14.95",
@@ -32,7 +32,7 @@
         "src2":"cart.png"
     },
 	{
-		"id" : "shop01",
+		"id" : "shop05",
 		"name" : "开饭乐 切刻奶味磨牙骨 200g 奶味",
 		"src" : "5.jpg",
         "price1" : "￥14.95",
@@ -40,7 +40,7 @@
         "src2":"cart.png"
     },
 	{
-		"id" : "shop01",
+		"id" : "shop06",
 		"name" : "开饭乐 切刻奶味磨牙骨 200g 奶味",
 		"src" : "6.jpg",
         "price1" : "￥14.95",
@@ -48,7 +48,7 @@
         "src2":"cart.png"
     },
 	{
-		"id" : "shop01",
+		"id" : "shop07",
 		"name" : "开饭乐 切刻奶味磨牙骨 200g 奶味",
 		"src" : "7.jpg",
         "price1" : "￥14.95",
@@ -56,7 +56,7 @@
         "src2":"cart.png"
     },
 	{
-		"id" : "shop01",
+		"id" : "shop08",
 		"name" : "开饭乐 切刻奶味磨牙骨 200g 奶味",
 		"src" : "8.jpg",
         "price1" : "￥14.95",
@@ -64,7 +64,7 @@
         "src2":"cart.png"
     },
 	{
-		"id" : "shop01",
+		"id" : "shop09",
 		"name" : "开饭乐 切刻奶味磨牙骨 200g 奶味",
 		"src" : "9.jpg",
         "price1" : "￥14.95",

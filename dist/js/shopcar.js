@@ -37,7 +37,10 @@ var index = 1;//页码
                                 <img src="img/${pro.src2}" alt="">
                             </b>
                             </span>
-                            <button data-pid='${ pro.id }' data-pname='${ pro.name }' data-src= '${ pro.src }' data-price='${ pro.price1 }' id="btn">购买</button>
+							<button data-pid='${ pro.id }' data-pname='${ pro.name }' data-src= '${ pro.src }' 
+							data-src2= '${ pro.src2 }' data-price1='${ pro.price1 }' 
+							data-price2='${ pro.price2 }'
+							id="btn">购买</button>
 						</li>`;
 			}
 			   
@@ -169,7 +172,7 @@ var index = 1;//页码
 				}else{
 					clearInterval(timer);
 					$img.remove();
-					$("#shopNum").html( Number($("#shopNum").html()) + 1 );
+					$(".sp #shopNum").html( Number($(".sp #shopNum").html()) + 1 );
 				}
 			}.bind(this),20)
 		}
@@ -180,11 +183,14 @@ var index = 1;//页码
 	getCount();
 	function getCount(){
 		var brr = getCookie("shoplist");
+		console.log(brr);
 		var count = 0;
 		if( brr.length != 0 ){
 			for( var i = 0 ; i < brr.length ; i++ ){
 				count += brr[i].count;
 			}
-			$("#shopNum").html(count);
+			//console.log(count);
+			$(".sp #shopNum").html(count);
+			console.log($("#shopNum").html());
 		}
 	}
