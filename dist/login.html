@@ -262,16 +262,26 @@
         var oUser=document.getElementById("username");
         var oPwd=document.getElementById("password");
         oBtn.onclick=function(){
-            url="http://localhost:8080/proxy/localhost/php-level2/project/epet/denglu-login/php/login.php";
-            ajaxPost(url,`username=${oUser.value}&password=${oPwd.value}`)
-            .then(function(res){
-                console.log(res)
-            })
+            $.ajax({
+						url:"http://localhost:8080/proxy/localhost/php-level2/project/epet/denglu-login/php/login.php",
+						type:"GET",
+						data:`username=${oUser.value}}&password=${oPwd.value}`,
+						datatype:"html",
+						success:function(res){
+							// alert(res)
+							console.log(res)
+							// window.location.href="epet.html"
+						}
+					})
+
+       				 
+                };
           
-        }
+        
         // window.open("");
 
 
     </script>
+    <script src="js/jquery-3.3.1.js"></script>
 </body>
 </html>
